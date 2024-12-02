@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  h2(class="section-title") Clientes API Routes
+  ul(class="routes")
+    li 
+      a(href="/clientes") GET /clientes
+    li GET clientes/cliente/:id
+    li POST clientes/cliente
+    li PUT clientes/cliente/:id
+    li DELETE clientes/cliente/:id
+
+  h2(class="section-title") Instalaciones API Routes
+  ul(class="routes")
+    li 
+      a(href="/instalaciones") GET /instalaciones
+    li GET /instalaciones/instalacion/:id
+    li POST /instalaciones/instalacion
+    li PUT /instalaciones/instalacion/:id
+    li DELETE /instalaciones/instalacion/:id
+
+  h2(class="section-title") Productos API Routes
+  ul(class="routes")
+    li 
+      a(href="/productos") GET /productos
+    li GET /productos/producto/:id
+    li POST /productos/producto
+    li PUT /productos/producto/:id
+    li DELETE /productos/producto/:id
+
+  p(class="postman-instructions")
+    | Para probar estas rutas protegidas en Postman:
+  ul(class="postman-steps")
+    li 
+      | Asegúrate de tener una cookie válida de autenticación al realizar las solicitudes. 
+    li 
+      | Usa la pestaña "Cookies" en Postman para añadir la cookie manualmente si es necesario.
+    li 
+      | Realiza solicitudes GET, POST, PUT o DELETE a las rutas protegidas y observa la respuesta.
+
+
+  h2(class="section-title") Usuarios API Routes
+  ul(class="routes")
+    li 
+      a(href="/usuarios") GET /usuarios - *Esta ruta está protegida por una cookie de autenticación*
+    li GET /usuarios/usuario/:id - *Protegida por una cookie de autenticación*
+    li POST /usuarios/usuario - *Protegida por una cookie de autenticación*
+    li PUT /usuarios/usuario/:id - *Protegida por una cookie de autenticación*
+    li DELETE /usuarios/usuario/:id - *Protegida por una cookie de autenticación*
+

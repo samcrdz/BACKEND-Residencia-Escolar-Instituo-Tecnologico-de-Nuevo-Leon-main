@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0 100px;
+}
+
+.section-title {
+  color: #3498db;
+  font-size: 24px;
+  margin-top: 30px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.routes {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+.routes li {
+  background-color: #ecf0f1;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 5px solid #3498db;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.routes li:hover {
+  background-color: #d9e4ea;
+}
+
+.postman-instructions {
+  background-color: #eaf2f8; 
+  border: 2px solid #7598BC; 
+  border-radius: 8px; 
+  padding: 20px;
+  margin-top: 25px;
+  font-size: 16px;
+  color: #1D324D; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.postman-steps {
+  margin-top: 15px;
+  padding-left: 30px;
+  list-style-type: none;
+}
+
+.postman-steps li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.postman-steps li::before {
+  content: '✔'; 
+  color: #243c5a; 
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
